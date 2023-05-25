@@ -1,0 +1,80 @@
+package karakter;
+
+public class karakter {
+
+	    private String name;// ismi
+	    private String cClass;// karakterin sinifi
+	    private int level; // seviyesi
+	    private int xp; // xp tracker'ı
+	    private int origin;// karakterin konumu
+
+	    // Constructor
+	    public karakter(String name, String cClass, int level, int xp, int origin) {
+	        this.name = name;
+	        this.cClass = cClass;
+	        this.level= level;
+	        this.xp= xp;
+	        this.origin=origin;
+}
+
+// getter setter
+		public String getName() {
+			return this.name;
+		}
+
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+
+		public int getOrigin() {
+			return this.origin;
+		}
+
+		public void setOrigin(int origin) {
+			this.origin = origin;
+		}
+
+		public String getcClass() {
+			return this.cClass;
+		}
+
+
+		public void setcClass(String cClass) {
+			this.cClass = cClass;
+		}
+
+
+		public int getLevel() {
+			return this.level;
+		}
+
+
+		public void setLevel(int level) {
+			this.level = level;
+		}
+
+
+		public int getXp() {
+			return this.xp;
+		}
+
+
+		public void setXp(int xp) {
+			this.xp = xp;
+		}
+		
+	// methodlar
+		 public int move(int move,int origin) {
+			    origin+=move;
+			 	return this.origin;
+			  }
+		 
+		 public void talk(String talk) {
+			 System.out.println(talk);
+			 
+		 }
+		
+}
+	    
